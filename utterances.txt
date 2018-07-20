@@ -1,0 +1,3 @@
+powerStateIntent turn {PowerState}
+powerStateIntent turn {PowerState} curtain
+powerStateIntent turn curtain {PowerState}

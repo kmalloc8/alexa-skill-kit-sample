@@ -1,0 +1,56 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my curtain",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "powerStateIntent",
+                    "slots": [
+                        {
+                            "name": "PowerState",
+                            "type": "LIST_OF_POWERSTATE"
+                        }
+                    ],
+                    "samples": [
+                        "turn curtain {PowerState}",
+                        "turn {PowerState} curtain",
+                        "turn {PowerState}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_POWERSTATE",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "OFF"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ON"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
